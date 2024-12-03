@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+:root{
+    --surface-color:#fff;
+    --curve:40;
+}
 /* mobile -view */
 .section-1{
     display: flex;
@@ -79,6 +84,162 @@
     width: 100%;
     height: 100%; 
 }
+
+/* section-2 */
+
+.section-2{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10%;
+
+
+}
+
+.section-2 h1{
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color:#921A40;
+    text-align: center;
+}
+
+.section-2 img{
+    width: 20px;
+    height: auto;
+}
+/* section-3 */
+.section-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F4D9D0;
+}
+
+.section-heading{
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  text-align: center;
+  color:#921A40;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    height: 90vh;
+    justify-content: space-between;
+    
+}
+
+.card{
+    position: relative;
+    display: block;
+    border-radius: 40px;
+    text-decoration: none;
+    overflow: hidden;
+    width: 100vw;
+    height: 40vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    border: silver 2px solid;
+
+   
+}
+
+
+
+.card_image{
+    width: 90%;
+    height: auto;
+    margin-top: 4%;
+}
+.card_image:hover img {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+
+.card_image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    border: silver 2px solid;
+
+
+}
+
+.card_overlay{
+    position: absolute;
+   bottom: 5%;
+    z-index: 1;
+    border-radius: calc(var(--curve)*1px);
+    background-color: var(--surface-color);
+    width: 60%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.card__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    border-radius: calc(var(--curve) * 1px) 0 0 0;    
+    background-color: var(--surface-color);
+
+  }
+
+
+
+  .card__title {
+    font-size: 1em;
+    margin: 0 0 .3em;
+    color: #6A515E;
+    text-align: center;
+    text-decoration: underline;
+    font-family: "Playfair Display SC", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+  /* section-4 */
+
+  .skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap:2px;
+    
+  }
+
+  .skill img{
+    width: 30%;
+    height: auto;
+    margin-left: 50%;
+    margin-top: 50%;
+    transform: translate(-50%,-50%);
+
+  }
+    
+/* SECTION-5 */
 
 
 /* desktop view */
